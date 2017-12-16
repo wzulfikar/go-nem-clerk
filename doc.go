@@ -3,7 +3,7 @@
 // Sample code:
 //	func main() {
 //		c, _ := nemclerk.NewClient("http://23.228.67.85:7890")
-//		tx, err := c.AllTransactions("TC6Z5CY3TX4V3UCTWFZLCSEH6WOSIZ4PU2RURAHN", "", "")
+//		tx, err := c.GetAllTransactions("NEM_ADDRESS_HERE", "", "")
 //		if err != nil {
 //			log.Fatal(err)
 //		}

@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	nemclerk "local-dev/go-nem-clerk"
-	nemrequests "local-dev/go-nem-clerk/requests"
+	nemclerk "github.com/wzulfikar/go-nem-client"
+	nemrequests "github.com/wzulfikar/go-nem-client/requests"
 
 	"github.com/jasonlvhit/gocron"
 	"github.com/joho/godotenv"
@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	err := godotenv.Load(os.Getenv("NEM_CLERK_CONFIG"))
+	err := godotenv.Load(os.Getenv("GO_NEM_CONFIG"))
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}

@@ -2,10 +2,11 @@ package nemclerk
 
 import (
 	"fmt"
-	nemrequests "local-dev/go-nem-clerk/requests"
 	"log"
 	"net/http"
 	"os"
+
+	nemrequests "github.com/wzulfikar/go-nem-client/requests"
 
 	"github.com/davecgh/go-spew/spew"
 )
@@ -20,7 +21,7 @@ func NewClient(endpoint string) (*nemrequests.Client, error) {
 }
 
 func DefaultClient() (*nemrequests.Client, error) {
-	return NewClient(os.Getenv("NEM_CLERK_ENDPOINT"))
+	return NewClient(os.Getenv("NEM_SERVER"))
 }
 
 func SignUnconfirmedTx(c *nemrequests.Client, addr string) {

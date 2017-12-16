@@ -2,8 +2,9 @@ package nemrequests
 
 import (
 	"encoding/json"
-	nemparams "local-dev/go-nem-clerk/params"
-	nemtypings "local-dev/go-nem-clerk/typings"
+
+	nemparams "github.com/wzulfikar/go-nem-client/params"
+	nemtypings "github.com/wzulfikar/go-nem-client/typings"
 
 	"github.com/google/go-querystring/query"
 )
