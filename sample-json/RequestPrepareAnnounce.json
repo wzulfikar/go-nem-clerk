@@ -1,0 +1,15 @@
+{
+  "transaction": {
+    "timeStamp": 9111526,
+    "fee": 6000000,
+    "type": 4098,
+    "deadline": 9157365,
+    "version": -1744830463,
+    "signer": "0662ed29cbfa7038530fb7f52df865eed6708d51bc7a24bcd05db35185b53c70",
+    "otherHash": {
+      "data": "44e4968e5aa35fe182d4def5958e23cf941c4bf809364afb4431ebbf6a18c039"
+    },
+    "otherAccount": "TALICELCD3XPH4FFI5STGGNSNSWPOTG5E4DS2TOS"
+  },
+  "privateKey": "00be34fdb20a9f6fed51376f0bab9f25ea7a48d610324588a6b203d0a1a6db4bc1"
+}
