@@ -8,9 +8,7 @@ package nemtypings
 
 type UnconfirmedTransactionMetaDataPair struct {
 	Data []struct {
-		Meta struct {
-			Data string `json:"data"`
-		} `json:"meta"`
+		Meta        MetaData `json:"meta"`
 		Transaction struct {
 			Deadline   int64 `json:"deadline"`
 			Fee        int64 `json:"fee"`

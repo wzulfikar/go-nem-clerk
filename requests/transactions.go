@@ -19,7 +19,7 @@ var TransactionPaths = struct {
 	"/account/unconfirmedTransactions",
 }
 
-func (c *Client) GetAllTransactions(addr string, optHash string, optId string) (tx *nemtypings.IncomingTransactions, err error) {
+func (c *Client) GetAllTransactions(addr string, optHash string, optId string) (tx *nemtypings.Transactions, err error) {
 	v, _ := query.Values(nemparams.AllTransactions{
 		addr, optHash, optId,
 	})
