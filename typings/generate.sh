@@ -9,9 +9,8 @@ jsonFiles="json-sample/*.json"
 msg1="// GO struct based on JSON file"
 msg2="// "
 msg3="// "
-msg4="// This file is generated using gojson via go-nem-client/typings/generate.sh"
+msg4="// This file was generated using gojson via go-nem-client/typings/generate.sh"
 msg5="// DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING"
-msg6="// → $(date)"
 
 count=0
 echo "Generating .go files from ${jsonFiles}"
@@ -23,7 +22,6 @@ for filename in $dir/$jsonFiles; do
 	echo $msg3 >> $dir/$gofile
 	echo $msg4 >> $dir/$gofile
 	echo $msg5 >> $dir/$gofile
-	echo $msg6 >> $dir/$gofile
 
 	cat $filename | gojson -pkg nemtypings -name $(basename "$filename" .json) >> $dir/$gofile && echo "✔ ${gofile}"
 
