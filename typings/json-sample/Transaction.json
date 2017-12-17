@@ -1,0 +1,11 @@
+{
+  "timeStamp": 9111526,
+  "signature": "651a19ccd09c1e0f8b25f6a0aac5825b0a20f158ca4e0d78f2abd904a3966b6e3599a47b9ff199a3a6e1152231116fa4639fec684a56909c22cbf6db66613901",
+  "fee": 150000,
+  "mode": 1,
+  "remoteAccount": "cc6c9485d15b992501e57fe3799487e99de272f79c5442de94eeb998b45e0144",
+  "type": 2049,
+  "deadline": 9154726,
+  "version": 1744830465,
+  "signer": "a1aaca6c17a24252e674d155713cdf55996ad00175be4af02a20c67b59f9fe8a"
+}

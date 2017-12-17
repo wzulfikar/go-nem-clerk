@@ -3,6 +3,10 @@
 - based on https://nemproject.github.io
 
 
+
+### 1. nemclient
+- used to create instance of `nemrequests.Client`
+
 ```go
 func main() {
 
@@ -17,3 +21,12 @@ func main() {
     fmt.Println(string(s))
 }
 ```
+
+### 2. nemrequests
+- wrapper for path & params
+
+### 3. nemparams
+- request params
+
+### 4. nemtypings
+- typings (response, etc)

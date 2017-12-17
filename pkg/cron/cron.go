@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	nemclerk "github.com/wzulfikar/go-nem-client"
+	nemclient "github.com/wzulfikar/go-nem-client"
 	nemrequests "github.com/wzulfikar/go-nem-client/requests"
 
 	"github.com/jasonlvhit/gocron"
@@ -20,14 +20,14 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	c, err := nemclerk.DefaultClient()
+	c, err := nemclient.NewClient(os.Getenv("NEM_SERVER"))
 	if err != nil {
 		panic(err)
 	}
 
 	s := gocron.NewScheduler()
 
-	clerkAddr := os.Getenv("NEM_CLERK_ADDR")
+	clerkAddr := os.Getenv("NEM_CLERK_ADDRESS")
 	fmt.Println("Watching unsigned tx at address " + clerkAddr)
 	s.Every(3).Seconds().Do(func() { signUnsignedTx(c, clerkAddr) })
 
